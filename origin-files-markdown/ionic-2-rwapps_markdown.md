@@ -40,7 +40,7 @@
 
 <!-- /TOC -->
 
-- Ionic 2 uses kebob-casing for file names (my-about-page.html) and css classes (.my-about-page), and uses PascalCasing for JavaScript classes in ES6/TypeScript (MyAboutPage)
+- Ionic 2 uses kebab-casing for file names (my-about-page.html) and css classes (.my-about-page), and uses PascalCasing for JavaScript classes in ES6/TypeScript (MyAboutPage)
 
 see: http://ionicframework.com/docs/v2/cli/generate/
 
