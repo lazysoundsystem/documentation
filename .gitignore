@@ -1,0 +1,5 @@
+#About phpstorm
+.idea/
+
+.htaccess
+.htpasswd*
