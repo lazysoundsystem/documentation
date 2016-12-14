@@ -1,0 +1,434 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Header style */
+
+html{
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+p{
+  text-align: justify;
+  line-height: 28px;
+}
+
+ol li, ul li {
+    line-height: 28px;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    border-radius: 2px;
+    background: #fff;
+}
+
+tr {
+    display: table-row;
+    vertical-align: top;
+    border-color: inherit;
+}
+
+table th, table td {
+    padding: 16px 32px;
+    border-bottom: 1px solid #CFD8DC;
+    text-align: left;
+}
+
+table td ol{
+  margin-top: 5px;
+  text-align: justify;
+}
+
+#header-bar {
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    background-color: #2E86C1;
+    color: #fff;
+    height: 56px;
+    min-height: 56px;
+    padding: 0 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+
+  }
+
+#header-bar a {
+  color: #fff;
+  padding: 15px 0 0 20px;
+}
+
+#header-bar a:focus{
+  outline: none;
+  text-decoration : none;
+}
+
+#header-bar a:hover{
+  text-decoration : none;
+}
+
+#title{
+  padding-bottom: 5px;
+  font-size: 1em;
+}
+
+#title img{
+  margin: 7px 0 5px 20px;
+}
+
+#title h1{
+  margin: 15px 0 5px 150px;
+  display : none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 18px !important;
+}
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    top:56px;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: rgb(236,239,241);
+    box-shadow: 3px 0 6px rgba(0,0,0,0.3);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    top:56px;
+}
+
+/*#page-title-wrapper {
+    width: 100%;
+    padding: 80px 48px 40px;
+    position: relative;
+    color :#fff;
+}*/
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.key-functions th{
+  width :33%;
+  text-align: center;
+}
+
+.key-functions th, .key-functions td{
+  border-right: 1px solid #CFD8DC;
+}
+
+#home{
+  color: #34A853;
+  /*color : #fff;*/
+  /*background-color: #34A853;*/
+  padding: 10px 0px 10px 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+}
+
+#roster{
+  color : #5591F5;
+  /*color : #fff;*/
+  /*background-color: #5591F5;*/
+  padding: 10px 0px 10px 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#alert{
+  color: #EA4335;
+  /*color : #fff;*/
+  /*background-color: #EA4335;*/
+  padding: 10px 0px 10px 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#deployment{
+  color: #34A853;
+  /*color : #fff;*/
+  /*background-color: #34A853;*/
+  padding: 10px 0px 10px 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Sidebar Styles */
+
+.center{
+  text-align: center;
+
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(82,82,95);
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: rgb(242,241,244);
+    background: rgb(119,172,217);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    padding: 16px 0;
+    border-top: 1px solid #CFD8DC;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: rgb(82,82,95);
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color:rgb(242,241,244);
+    background: rgb(119,172,217);
+}
+
+.nav-title{
+  font-size: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #CFD8DC;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-title-second{
+  font-size: 14px;
+  padding: 16px 0;
+  border-top: 1px solid #CFD8DC;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.l-sub-section {
+    margin: 0 0 32px 0;
+    padding: 16px 24px;
+    background: #f5f6f7;
+    border-left: 4px solid #8BC34A;
+    border-radius: 4px;
+}
+
+.question-box{
+  margin: 0 0 32px 0;
+  padding: 16px 24px;
+  font-size: 14px;
+  background: #f5f6f7;
+  border-left: 3px solid #ddd;
+  border-radius: 4px;
+}
+
+.question-box b{
+  font-size: 18px;
+}
+
+.anchor {
+  padding-top: 70px;
+}
+
+.sub-title{
+  text-align:center;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    #title h1{
+      font-size: 2em;
+      display : inline-block;
+    }
+
+}
+
+
+.bg-red {
+  background-color: #EA4335 !important;
+}
+.bg-blue {
+  background-color: #4285F4 !important;
+}
+.bg-green {
+  background-color: #34A853 !important;
+}
+.bg-orange {
+  background-color: #F9A125 !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #525252;
+}
+h1,h2,h3,h4{
+    font-weight: bold;;
+}
+
+
+/* Add for override plugin jquery called scrollNav */
+/* The css for this web site are here              */
+/* Before you can see the css used on emalsys.net  for the pages
+   https://emalsys.net/en/definitions  wiki  etc   */
+/* ------- */
+
+.scroll-nav__list{
+    padding: 0px;
+}
+
+
+.scroll-nav__item.active {
+
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+
+    background: #E5E8E8;
+
+    transition: 0.3s;
+
+}
+.scroll-nav__sub-item.active,.scroll-nav__sub-item.active > a {
+    color: #1A5276 !important;
+    font-weight: bolder;
+}
+
+
+
+.scroll-nav__item{
+    margin:0px;
+
+}
+
+
+
+
+
+#title h1{
+    margin: 15px 0 5px 15px;
+    /*display : none;*/
+    /*font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px !important;*/
+}
+#title h1 a:hover{
+    color: #D00202;
+    color: brown;
+}
+
+
+
+
+.breadcrumbs-icon{
+     border: solid 0px red;
+     margin: 0px; padding:0px;
+}
+.breadcrumbs-icon img a{
+    border: solid 0px red;
+    margin: 0px; padding:0px;
+    margin-bottom: 200px;
+}
+
+/*#header-bar a {
+    color: #fff;
+    padding: 0px 0 0 0px;
+}*/
+
+#title img {
+    margin: 7px 0 5px 20px;
+    margin-bottom: 12px;
+}
+
+
+
+
+/* header more smaller so every iteme on a row of the sidebar  */
+
+ /*.scroll-nav__sub-item{
+     margin:0px !important;  padding:0px !important;
+     text-indent: 20px;
+     line-height: 30px
+ }*/
+
+ .sidebar-nav li {
+     text-indent: 10px;
+     font-size: 12px;
+ }
