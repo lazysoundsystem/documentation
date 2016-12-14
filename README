@@ -1,22 +1,5 @@
-# A simple web site for the documentation of the apps - just a single page
-  It is online here:  http://doc.reliefapps.org/
-
-
-#Technology used
-
-## jquery.scrollNav.min
-  http://scrollnav.com/
-  plugin jquery used for generete the menu from some tag html like <h2></h2>
-
-## pandoc
- It's a commandline tool that lets you convert from one format to another.
- http://pandoc.org/installing.html
-
- - Install it by:
-   $ brew install pandoc
-
- -ex: use it
- $ pandoc -f markdown index.md > index.html
+# A simple web site for the documentation of the ReliefWeb apps - just a single page
+It is online here:  http://doc.reliefweb.reliefapps.com/index.php
 
 
 
